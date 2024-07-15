@@ -11,7 +11,7 @@ import (
 	"os"
 )
 
-var gacek_home = "/mnt/nfs/gacek"
+var gacek_home = os.Getenv("GACEK_HOME")
 var jobs_dir = gacek_home + "/jobs"
 var queues_dir = gacek_home + "/queues"
 
